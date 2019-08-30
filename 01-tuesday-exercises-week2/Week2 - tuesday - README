@@ -1,0 +1,93 @@
+02-Tuesday-assignment
+
+•	What is your public IP address right now, and how did you find it?
+(https://computer.howstuffworks.com/dns1.htm)
+5.179.80.204: google søgning: IP address.
+
+•	What is your private IP address right now (do this both at home and in school), and who/what gave you that address?
+
+1.	Metode:
+-	Note that the address will change periodically unless you've chosen to use a static IP (rare for end-users):
+-	Windows — Though you can click through the user interface to find your network interface settings, one quick way to find your IP address is to open the Command Prompt application from Accessories and enter this command: ipconfig
+-	cmd -> ipconfig 
+   IPv4 Address. . . . . . . . . . . : 192.168.0.11
+
+2.	Metode:
+-	Indstillinger -> Netværk og internet -> Netværks- og delingscenter -> Internet (Wi-Fi 2)-> Detaljer
+-	IPv4-adresse: 192.168.0.11
+
+•	What’s special about these address ranges?
+•	 10.0.0.0 – 10.255.255.255
+•	172.16.0.0 – 172.31.255.255 
+•	92.168.0.0 – 192.168.255.255
+(https://computer.howstuffworks.com/dns1.htm)
+-	Note that if you're on a home or small local network, your address will probably be in the form 192.168.x.x, 172.16.x.x or 10.x.x.x 
+-	(where x is a number between 0 and 255). 
+-	These are reserved addresses used on each local network, and a router on that network then connects you to the internet.
+
+•	What’s special about this ip-address: 127.0.0.1? (https://computer.howstuffworks.com/dns1.htm)
+-	Certain addresses and ranges are designated by the IANA as reserved IP addresses, which means they have a specific job in IP. 
+-	For example, the IP address 127.0.0.1 is reserved to identify the computer you're currently using.
+•	What kind of service would you expect to find on a server using these ports: 22, 23, 25, 53, 80, 443? (https://www.webopedia.com/quick_ref/portnumbers.asp)
+-	Port 22: SSH Remote Login Protocol
+-	Port 23: Telnet
+-	Port 25: Simple Mail Transfer Protocol (SMTP)
+-	Port 53: Domain Name System (DNS)
+-	Port 80: HTTP
+-	Port 433: HTTPS
+-	
+•	What is the IP address of studypoints.dk and how did you find it?
+I used this URL: (https://network-tools.com/nslookup/)
+Name	TTL Until Refresh	Class	Type	Data
+studypoints.dk.	3565	IN	A	165.227.137.75
+
+cmd ->ping www.studypoints.dk: 165.227.137.75
+
+•	If you write https://studypoints.dk in your browser, how did “it” figure out that it should go to the IP address you discovered above?
+
+
+•	Explain shortly the purpose of an ip-address and a port-number and why we need both
+•	What is your (nearest) DNS server,?
+•	What is (conceptually) the DNS system and the purpose with a DNS Server?
+
+Domain name system (DNS) er en navngivningsdatabase hvor internetdomænenavne er lokaliseret og oversat til IP adresser.
+
+Domænenavnssystemet kortlægger navnene folk bruger til at lokaliserer websider til den IP addresse som en computer bruger til at lokaliserer en webside.
+
+Web browsing og de fleste andre internet aktiviteter stoler på at DNS'en hurtigt giver den nødvendige information som er nødvendig for at forbinde brugerne til eksterne værter
+.
+DNS kortlægning er distribueret i hierarki. Hvor lande og universiteter mv. er højest rangeret. Større firmaer er rangeret i midten og private brugere er lavere rangeret. Top domæneniveau er f.eks. .com, .org, .dk, .us eller .edu. Domænehierakiet er læst fra højre mod venstre. 
+
+Hver label til venstre betegner et andet underdomæne til højre. IETF har fastsat regler om domænenavne.
+
+•	What is your current Gateway, and how did you find it?
+Default Gateway: 192.168.0.1     (found by using cmd -> ipconfig)
+
+•	What is the address of your current DHCP-Server, and how did you find it?
+•	Explain (conceptually) about the TCP/IP-protocol stack
+transportlaget er 2. lag og internet laget er 3. lag. 
+Tcp ip protocol-stacks er opdelt i 4 lag:
+1) application layer		
+2) transport layer		
+3) internet layer		
+4) network access layer		
+
+When another computer receives a message its the other way around. it starts recieving at layer 4) -> layer 1)
+
+The transport layer (2. layer) handles host-to-host communication.
+TCP, UDP
+where
+TCP (Transmission Control Protocol)
+a connection-oriented protocol that addresses numerous reliability issues to provide a reliable end to end connection
+- data arrives in-order
+- data is error free
+- duplicate data is discarded
+- lost/discarded packets are resent
+- includes traffic congestion control
+
+The internet layer (3. layer) handles the IP. Connects local networks, that is, it establishes internetworking.
+
+•	Explain about the HTTP Protocol (the following exercises will go much deeper into this protocol)
+•	Explain (conceptually) how HTTP and TCP/IP are connected (what can HTTP do, and where does it fit into TCP/IP)
+
+

@@ -1,0 +1,63 @@
+1)
+
+2)
+Jeg kan finde Console og Source men ikke ”connection header”?
+
+3)
+Explain:
+•	The two HTTP-request you see
+1)	Jeg får en side hvor der står ” You got redirected to me”.
+2)	404 Not Found
+nginx/1.14.0 (Ubuntu)
+•	How the browser knew where to go in the second request
+response.sendRedirect("r.html"); Der bliver refereret til r.html siden i vha. doGET metoden.
+
+3a)
+Jeg kan ikke finde ”the network-tab open”!
+
+
+4a)
+HTTP Status 500 – Internal Server Error
+Type Exception Report
+
+Message / by zero
+
+Description The server encountered an unexpected condition that prevented it from fulfilling the request.
+
+Exception
+	
+java.lang.ArithmeticException: / by zero
+	servlets.Ups.processRequest(Ups.java:33)
+	servlets.Ups.doGet(Ups.java:60)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+Note The full stack trace of the root cause is available in the server logs.
+
+Apache Tomcat/9.0.24
+
+Vi får en status 500 fejl og en forklaring som hedder ArithmeticException: / by zero.
+
+4b)
+HTTP Status 404 – Not Found
+Type Status Report
+
+Message /i_dont_exist
+
+Description The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.
+
+Apache Tomcat/9.0.24
+
+Vi får en status 404 meddelelse og en forklaring ”Description …”.
+
+4c)
+200's Successful requests. 
+300's Redirections.
+400's Problem with the request.
+404    Not found.
+500's Problem with the server.
+
+5)
+Vælg: Network -> Name “index1”-> Headers
+
+Jeg har fundet Header informationer men jeg har på fornemmelsen at opgaven er løst forkert!

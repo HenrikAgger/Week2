@@ -1,0 +1,14 @@
+Jeg har oprettet et domænenavn henriksdomainname.dk
+Jeg har opsat domænenavnet på Digital Ocean.
+Jeg er nået til "Change the size of documents that can be uploaded via Nginx 
+midt på side 6 ud af 9 sider.
+Jeg ved ikke hvordan jeg skal komme videre nå der står følgende:
+~
+~
+~
+~
+~
+~
+lines 1-11/11 (END)
+
+og jeg skal "Open this file: /etc/nginx/nginx.conf"
